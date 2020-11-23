@@ -15,7 +15,16 @@
         <a-scene embedded arjs='sourcetype: webcam;'>
             
              <a-marker-camera preset='hiro'>
-           <a-entity obj-model="obj:url(./globe/new_globe.obj); mtl:url(./globe/new_globe.mtl)"></a-entity>
+           <a-entity obj-model="obj:url(./globe/new_globe.obj); mtl:url(./globe/new_globe.mtl)">
+           
+               <a-animation attribute="rotation"
+                             dur="3000"
+                             to="360 0 0"
+                             repeat="indefinite"
+                             easing="linear">
+                 </a-animation>  
+            
+            </a-entity>
                  
             <a-light type="ambient" color="#fdfaff" intensity:="" 1.2="" light""></a-light> 
             
