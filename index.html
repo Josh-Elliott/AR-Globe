@@ -15,11 +15,11 @@
         <a-scene embedded arjs='sourcetype: webcam;'>
             
              <a-marker-camera preset='hiro'>
-           <a-entity obj-model="obj:url(./globe/new_globe.obj); mtl:url(./globe/new_globe.mtl)">
+           <a-entity obj-model="obj:url(./globe/new_globe.obj); mtl:url(./globe/new_globe.mtl)" position='0 1 0'>
            
                <a-animation attribute="rotation"
                              dur="3000"
-                             to="360 0 0"
+                             to="0 0 360"
                              repeat="indefinite"
                              easing="linear">
                  </a-animation>  
