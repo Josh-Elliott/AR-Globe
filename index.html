@@ -1,6 +1,5 @@
 <!DOCTYPE HTML>
 <html lang="en" dir="ltr">
-
     <head>
          <meta charset="utf-8">
          <title>A-frame test</title>
@@ -14,15 +13,12 @@
     
         <a-scene embedded arjs='sourcetype: webcam;'>
             
-          
-            
-           <a-marker-camera preset='hiro'>
+             <a-marker-camera preset='hiro'>
+           <a-entity obj-model="obj:url(./globe/new_globe.obj); mtl:url(./globe/new_globe.mtl)" position='0 0.9 0'>
 
-                 <a-entity obj-model="obj:./globe/new_globe.obj;mtl:./globe/new_globe.mtl" position="0 0.4 0" scale="0.5 0.5 0.5">
-           
- 
                <a-animation attribute="rotation"
-                             dur="4000"
+                             dur="5000"
+                             dur="5500"
                              to="0 360 0"
                              repeat="indefinite"
                              easing="linear">
@@ -30,13 +26,12 @@
             
             </a-entity>
                  
-            <a-light type="ambient" color="#fdfaff" intensity:="" 1.3="" light""></a-light> 
+            <a-light type="ambient" color="#fdfaff" intensity:="" 1.2="" light""></a-light> 
             
             </a-marker-camera>
             
         </a-scene>
         
-
     </body>
     
 </html>
